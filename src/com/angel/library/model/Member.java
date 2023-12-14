@@ -2,10 +2,11 @@ package com.angel.library.model;
 
 import com.angel.library.enums.GenderType;
 import com.angel.library.enums.MemberCategories;
+import com.angel.library.interfaces.MemberControl;
 
 import java.util.List;
 
-public class Member extends Person
+public class Member extends Person implements MemberControl
 {
     private List <Book> books;
     private int bookAmount;
@@ -39,5 +40,9 @@ public class Member extends Person
     }
 
 
-
+    @Override
+    public MemberCategories memberCheck() {
+        //TODO: member check function!
+        return null;
+    }
 }

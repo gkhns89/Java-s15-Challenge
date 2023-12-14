@@ -1,9 +1,8 @@
 package com.angel.library.model;
 
 import com.angel.library.enums.GenderType;
-import com.angel.library.interfaces.PersonControl;
 
-public class Person implements PersonControl {
+public class Person {
 
     private String id;
     private String name;
@@ -33,8 +32,4 @@ public class Person implements PersonControl {
         return genderType;
     }
 
-    @Override
-    public String whoYouAre(Person user) {
-        return null;
-    }
 }

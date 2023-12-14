@@ -4,9 +4,9 @@ import com.angel.library.model.Person;
 
 public interface PersonControl {
 
-    default String whoYouAre(Person user) {
+    default String whoYouAre(Person person) {
 
-        return user.getClass().getName();
+        return person.getClass().getName();
 
         //TODO: tobe review!
 
